@@ -1,0 +1,10 @@
+<h1>Time Entry Form</h1>
+
+{% if error_message %}
+<p><strong>{{error_mesage}}</strong></p>
+{% endif %}
+<form action="{% url 'timelog:createEntry' %}" method="post">
+{% csrf_token %}
+<input type="text" name="entryTitle" />
+<input type="submit" value="Create" />
+</form>

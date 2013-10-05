@@ -7,8 +7,8 @@ admin.autodiscover()
 urlpatterns = patterns('',
     # Examples:
     # url(r'^$', 'tracker.views.home', name='home'),
-    url(r'^timelog/', include('timelog.urls')),
-    url(r'^tasklog/', include('tasklog.urls')),                       
+    url(r'^timelog/', include('timelog.urls', namespace='timelog')),
+    url(r'^tasklog/', include('tasklog.urls', namespace='tasklog')),                       
 
     # Uncomment the admin/doc line below to enable admin documentation:
 #    url(r'^admin/doc/', include('django.contrib.admindocs.urls')),

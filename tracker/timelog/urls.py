@@ -9,5 +9,7 @@ from timelog import views
 urlpatterns = patterns('',
     # Examples:
     url(r'^$', views.home, name='home'),
-    url(r'^entry/(?P<time_entry_id>\d+)/', views.timeEntryDetail, name='detail')
+    url(r'^entry/(?P<time_entry_id>\d+)/$', views.timeEntryDetail, name='detail'),
+    url(r'^entry/form$', views.timeEntryForm, name='detail'),
+    url(r'^entry/create$', views.createTimeEntry, name='createEntry')                       
 )
