@@ -154,3 +154,9 @@ LOGGING = {
         },
     }
 }
+
+# Load a local settings file to override these defaults if it exists.
+try:
+    from local_settings import *
+except ImportError, exp:
+    pass
