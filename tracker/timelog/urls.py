@@ -11,5 +11,5 @@ urlpatterns = patterns('',
     url(r'^$', views.home, name='home'),
     url(r'^entry/(?P<time_entry_id>\d+)/$', views.timeEntryDetail, name='detail'),
     url(r'^entry/form$', views.timeEntryForm, name='detail'),
-    url(r'^entry/create$', views.createTimeEntry, name='createEntry')                       
-)
+    url(r'^entry/create$', views.createTimeEntry, name='createEntry'),
+    url(r'^tag/(?P<tag_id>[\w.]+)/$', views.tagDetail, name='tagDetail'))

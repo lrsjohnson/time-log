@@ -128,6 +128,9 @@ INSTALLED_APPS = (
     # Our apps:
     'timelog',
     'tasklog',
+
+    # South database migrations
+    'south',
 )
 
 # A sample logging configuration. The only tangible logging
